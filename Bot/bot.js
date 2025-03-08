@@ -6,8 +6,8 @@ const bot = new Telegraf(TOKEN);
 const web_link="https://telegram-mini-app-psi-ecru.vercel.app/";
 
 bot.start((ctx) => ctx.reply('Welcome'), {
-    replay_markup: {
-        keyboard:[[{ text: "web app", web_app: {url: web_link}}]],
+    reply_markup: {
+        keyboard: [[{ text: "web app", web_app: {url: web_link } }]],
     },
 });
 bot.launch();
